@@ -8,7 +8,7 @@ namespace Tyuiu.TomilovDA.Sprint5.Task1.V18.Lib
         public string SaveToFileTextData(int startValue, int stopValue)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
-            for (int x = startValue; x < stopValue; x++)
+            for (int x = startValue; x <= stopValue; x++)
             {
                 if (Math.Cos(x) + 1 != 0)
                 {
