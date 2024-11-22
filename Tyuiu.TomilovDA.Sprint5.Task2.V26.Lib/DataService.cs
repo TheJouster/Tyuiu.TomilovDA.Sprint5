@@ -22,7 +22,7 @@ namespace Tyuiu.TomilovDA.Sprint5.Task2.V26.Lib
                     {
                         matrix[i, j] = 0;
                     }
-                    else
+                    else if (matrix[i, j] > 0)
                     {
                         matrix[i, j] = 1;
                     }
