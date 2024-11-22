@@ -6,7 +6,7 @@
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = @"C:\Users\Jouster\AppData\Local\Temp\OutPutFileTask0.txt";
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
             FileInfo fileInfo = new FileInfo(path);
             bool exists = fileInfo.Exists;
             Assert.IsTrue(exists);
