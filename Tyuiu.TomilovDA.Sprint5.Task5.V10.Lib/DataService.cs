@@ -12,10 +12,14 @@ namespace Tyuiu.TomilovDA.Sprint5.Task5.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    double x = double.Parse(line, System.Globalization.CultureInfo.InvariantCulture);
-                    if (x % 2 == 0)
+                    string[] nums = line.Split(' ');
+                    foreach (string s in nums)
                     {
-                        res += x;
+                        double x = double.Parse(s, System.Globalization.CultureInfo.InvariantCulture);
+                        if (x % 2 == 0)
+                        {
+                            res += x;
+                        }
                     }
                 }
             }
