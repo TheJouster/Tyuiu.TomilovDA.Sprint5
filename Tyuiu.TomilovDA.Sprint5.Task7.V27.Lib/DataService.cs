@@ -24,7 +24,7 @@ namespace Tyuiu.TomilovDA.Sprint5.Task7.V27.Lib
                 {
                     while (line.Contains("  ")) 
                     { 
-                    line = line.Replace("  ", " ");
+                    line = line.Replace("  ", "");
                     }
                     File.AppendAllText(saveFilePath, line+Environment.NewLine);
                     strLine = "";
